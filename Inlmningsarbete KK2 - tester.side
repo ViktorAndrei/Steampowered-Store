@@ -1,0 +1,751 @@
+{
+  "id": "164468e5-04b9-4d43-9569-fe0c0470aa40",
+  "version": "2.0",
+  "name": "Inlämningsarbete KK2 - tester",
+  "url": "https://store.steampowered.com",
+  "tests": [{
+    "id": "9d50f46f-4bb4-4756-86b1-5c4ff7eeba68",
+    "name": "Inlogg - assert kontonamn - logga ut",
+    "commands": [{
+      "id": "0a0b3e12-7314-4fcd-80f4-11029862a701",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "552cc468-8d7b-49e4-b198-6467a25d7c2f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d4a1296f-6244-4199-aa99-885306df724f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=logga in",
+      "targets": [
+        ["linkText=logga in", "linkText"],
+        ["css=.global_action_link:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'logga in')]", "xpath:link"],
+        ["xpath=//div[@id='global_action_menu']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://store.steampowered.com/login/?redir=&redir_ssl=1&snr=1_4_4__global-header')])[2]", "xpath:href"],
+        ["xpath=//div[3]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'logga in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "73087d30-4b87-4d93-88b1-fc78424ffae2",
+      "comment": "",
+      "command": "type",
+      "target": "css=.newlogindialog_TextField_2KXGK:nth-child(1) > .newlogindialog_TextInput_2eKVn",
+      "targets": [
+        ["css=.newlogindialog_TextField_2KXGK:nth-child(1) > .newlogindialog_TextInput_2eKVn", "css:finder"],
+        ["xpath=//input[@value='daim212']", "xpath:attributes"],
+        ["xpath=//div[@id='responsive_page_template_content']/div/div/div/div/div/div[2]/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "daim212"
+    }, {
+      "id": "748e8957-91fd-4572-9760-2323689c836f",
+      "comment": "",
+      "command": "type",
+      "target": "css=.newlogindialog_TextField_2KXGK:nth-child(2) > .newlogindialog_TextInput_2eKVn",
+      "targets": [
+        ["css=.newlogindialog_TextField_2KXGK:nth-child(2) > .newlogindialog_TextInput_2eKVn", "css:finder"],
+        ["xpath=//input[@value='RAI548ium']", "xpath:attributes"],
+        ["xpath=//div[@id='responsive_page_template_content']/div/div/div/div/div/div[2]/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "RAI548ium"
+    }, {
+      "id": "c8d0c194-f763-4eca-b36c-d92ebdd3b0a2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.newlogindialog_TextField_2KXGK:nth-child(1) > .newlogindialog_TextInput_2eKVn",
+      "targets": [
+        ["css=.newlogindialog_TextField_2KXGK:nth-child(1) > .newlogindialog_TextInput_2eKVn", "css:finder"],
+        ["xpath=//input[@value='daim212']", "xpath:attributes"],
+        ["xpath=//div[@id='responsive_page_template_content']/div/div/div/div/div/div[2]/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6f44869d-3af8-410b-b4ba-c43931b62e04",
+      "comment": "",
+      "command": "type",
+      "target": "css=.newlogindialog_TextField_2KXGK:nth-child(1) > .newlogindialog_TextInput_2eKVn",
+      "targets": [
+        ["css=.newlogindialog_TextField_2KXGK:nth-child(1) > .newlogindialog_TextInput_2eKVn", "css:finder"],
+        ["xpath=//input[@value='Dumle212']", "xpath:attributes"],
+        ["xpath=//div[@id='responsive_page_template_content']/div/div/div/div/div/div[2]/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Dumle212"
+    }, {
+      "id": "591d5d77-4710-4515-b3a9-f471a4de44d6",
+      "comment": "",
+      "command": "type",
+      "target": "css=.newlogindialog_TextField_2KXGK:nth-child(2) > .newlogindialog_TextInput_2eKVn",
+      "targets": [
+        ["css=.newlogindialog_TextField_2KXGK:nth-child(2) > .newlogindialog_TextInput_2eKVn", "css:finder"],
+        ["xpath=//input[@value='RAI548ium']", "xpath:attributes"],
+        ["xpath=//div[@id='responsive_page_template_content']/div/div/div/div/div/div[2]/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "RAI548ium"
+    }, {
+      "id": "674e877b-5339-4169-8bac-b0dcf6c13768",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.newlogindialog_TextField_2KXGK:nth-child(2) > .newlogindialog_TextInput_2eKVn",
+      "targets": [
+        ["css=.newlogindialog_TextField_2KXGK:nth-child(2) > .newlogindialog_TextInput_2eKVn", "css:finder"],
+        ["xpath=//input[@value='RAI548ium']", "xpath:attributes"],
+        ["xpath=//div[@id='responsive_page_template_content']/div/div/div/div/div/div[2]/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "bbcb8743-3cbe-4dc1-b8e9-119125c1cbce",
+      "comment": "",
+      "command": "click",
+      "target": "id=account_pulldown",
+      "targets": [
+        ["id=account_pulldown", "id"],
+        ["css=#account_pulldown", "css:finder"],
+        ["xpath=//span[@id='account_pulldown']", "xpath:attributes"],
+        ["xpath=//div[@id='global_action_menu']/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'VaLn')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a18f6b99-6d94-4223-9add-776cc0b99a77",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Visa profil",
+      "targets": [
+        ["linkText=Visa profil", "linkText"],
+        ["css=#account_dropdown > .popup_body > .popup_menu_item:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Visa profil')]", "xpath:link"],
+        ["xpath=//div[@id='account_dropdown']/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://steamcommunity.com/profiles/76561198210507704/')])[35]", "xpath:href"],
+        ["xpath=//div[3]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Visa profil')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "34f2158a-058f-4285-b398-83f6ac985615",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.profile_header_centered_persona .actual_persona_name",
+      "targets": [
+        ["css=.profile_header_centered_persona .actual_persona_name", "css:finder"],
+        ["xpath=//div[@id='responsive_page_template_content']/div/div/div/div/div/div/div/span", "xpath:idRelative"],
+        ["xpath=//div[6]/div/div/div/div/div/div/div/span", "xpath:position"]
+      ],
+      "value": "VaLn"
+    }, {
+      "id": "6367a8a5-b205-498c-8a1e-45cd56d7b59d",
+      "comment": "",
+      "command": "click",
+      "target": "id=account_pulldown",
+      "targets": [
+        ["id=account_pulldown", "id"],
+        ["css=#account_pulldown", "css:finder"],
+        ["xpath=//span[@id='account_pulldown']", "xpath:attributes"],
+        ["xpath=//div[@id='global_action_menu']/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'VaLn')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5fee579a-84d3-4614-ae9e-191a1c374f81",
+      "comment": "",
+      "command": "click",
+      "target": "css=.online:nth-child(1)",
+      "targets": [
+        ["css=.online:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='account_dropdown']/div/a[3]/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/a[3]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'dumle212')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "2977793a-68e7-45e1-a606-5fed8d34190e",
+    "name": "Butik - sökfunktion - assert av item",
+    "commands": [{
+      "id": "de2e5a27-2990-40f6-a35c-94d3514ce24c",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "96f37749-2634-470c-ae63-78e18f71bb95",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e0dbd35d-7e03-4cdc-bde0-b7b54669e281",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "//*[@id=\"global_header\"]/div/div[2]/a[2]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "de1393a4-a5a8-4364-ad7d-4850b3014e39",
+      "comment": "",
+      "command": "click",
+      "target": "css=.submenu_community:nth-child(1) > .submenuitem:nth-child(4)",
+      "targets": [
+        ["css=.submenu_community:nth-child(1) > .submenuitem:nth-child(4)", "css:finder"],
+        ["xpath=(//a[contains(text(),'Marknad')])[2]", "xpath:link"],
+        ["xpath=//div[@id='global_header']/div/div[2]/div/div/a[4]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://steamcommunity.com/market/')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div/div/a[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1fea68b1-de99-4414-b8e9-a14b7c535fd4",
+      "comment": "",
+      "command": "click",
+      "target": "id=findItemsSearchBox",
+      "targets": [
+        ["id=findItemsSearchBox", "id"],
+        ["name=q", "name"],
+        ["css=#findItemsSearchBox", "css:finder"],
+        ["xpath=//input[@id='findItemsSearchBox']", "xpath:attributes"],
+        ["xpath=//form[@id='market_search']/span/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f8e93edc-20a6-49fc-9d11-25d758d5b799",
+      "comment": "",
+      "command": "type",
+      "target": "id=findItemsSearchBox",
+      "targets": [
+        ["id=findItemsSearchBox", "id"],
+        ["name=q", "name"],
+        ["css=#findItemsSearchBox", "css:finder"],
+        ["xpath=//input[@id='findItemsSearchBox']", "xpath:attributes"],
+        ["xpath=//form[@id='market_search']/span/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Revolution Case"
+    }, {
+      "id": "83c03344-15f2-44fa-84b0-5e6ef4a3d151",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=findItemsSearchBox",
+      "targets": [
+        ["id=findItemsSearchBox", "id"],
+        ["name=q", "name"],
+        ["css=#findItemsSearchBox", "css:finder"],
+        ["xpath=//input[@id='findItemsSearchBox']", "xpath:attributes"],
+        ["xpath=//form[@id='market_search']/span/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "da00d373-47db-4870-81cc-757a015163ee",
+      "comment": "",
+      "command": "click",
+      "target": "css=.market_listing_item_name_block",
+      "targets": [
+        ["css=.market_listing_item_name_block", "css:finder"],
+        ["xpath=//div[@id='result_0']/div[2]", "xpath:idRelative"],
+        ["xpath=//a/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8748cf56-9cf9-4607-9ef4-65ba8549b0d0",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=largeiteminfo_item_name",
+      "targets": [
+        ["id=largeiteminfo_item_name", "id"],
+        ["css=#largeiteminfo_item_name", "css:finder"],
+        ["xpath=//h1[@id='largeiteminfo_item_name']", "xpath:attributes"],
+        ["xpath=//div[@id='largeiteminfo_content']/div[2]/h1", "xpath:idRelative"],
+        ["xpath=//div[2]/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Revolution Case')]", "xpath:innerText"]
+      ],
+      "value": "Revolution Case"
+    }]
+  }, {
+    "id": "134fa74e-4e8c-40ec-9c52-02b7b42ee399",
+    "name": "Om - Assert installeraknapp",
+    "commands": [{
+      "id": "12bfccd6-9459-4060-b8d5-0d3d183376a6",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f7f8e2f4-2894-41b5-ac6b-d7266e71f858",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "db86278d-9cac-4020-8948-ff087aaa3175",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=GEMENSKAP",
+      "targets": [
+        ["linkText=GEMENSKAP", "linkText"],
+        ["css=.menuitem:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'GEMENSKAP')]", "xpath:link"],
+        ["xpath=//div[@id='global_header']/div/div[2]/a[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://steamcommunity.com/')])[9]", "xpath:href"],
+        ["xpath=//div[7]/div/div/div[2]/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'GEMENSKAP')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "962773e8-055d-48fe-8896-cd9cc4ad4ee8",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=GEMENSKAP",
+      "targets": [
+        ["linkText=GEMENSKAP", "linkText"],
+        ["css=.menuitem:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'GEMENSKAP')]", "xpath:link"],
+        ["xpath=//div[@id='global_header']/div/div[2]/a[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://steamcommunity.com/')])[9]", "xpath:href"],
+        ["xpath=//div[7]/div/div/div[2]/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'GEMENSKAP')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "14d05f2b-3124-46d2-804e-a139dcb08d5c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=OM",
+      "targets": [
+        ["linkText=OM", "linkText"],
+        ["css=.supernav_container > .menuitem:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'OM')]", "xpath:link"],
+        ["xpath=//div[@id='global_header']/div/div[2]/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://store.steampowered.com/about/?snr=1_4_4__global-header')]", "xpath:href"],
+        ["xpath=//div[7]/div/div/div[2]/a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'OM')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6af583c4-b951-497c-b5f6-6a178a5e679f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.about_install_wrapper:nth-child(4) .about_install_steam_link",
+      "targets": [
+        ["css=.about_install_wrapper:nth-child(4) .about_install_steam_link", "css:finder"],
+        ["xpath=(//a[contains(text(),'Installera Steam')])[2]", "xpath:link"],
+        ["xpath=//div[@id='about_greeting']/div[4]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://cdn.akamai.steamstatic.com/client/installer/SteamSetup.exe')]", "xpath:href"],
+        ["xpath=//div[4]/div/a", "xpath:position"]
+      ],
+      "value": "INSTALLERA STEAM"
+    }]
+  }, {
+    "id": "c9eafaed-bf95-427b-a944-df3c45d22a64",
+    "name": "Inlogg - profil - senast spela spel - assert spelnamn",
+    "commands": [{
+      "id": "957dd2ee-1037-4e40-8e1a-dd9885980e06",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fe5b9e2a-453a-4df0-9248-45bcca2e6b46",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3914a377-b048-41cb-8850-f70d8e584e9d",
+      "comment": "",
+      "command": "click",
+      "target": "css=#logo_holder img",
+      "targets": [
+        ["css=#logo_holder img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://store.akamai.steamstatic.com/public/shared/images/header/logo_steam.svg?t=962016')]", "xpath:img"],
+        ["xpath=//span[@id='logo_holder']/a/img", "xpath:idRelative"],
+        ["xpath=//span/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "efbf6850-e9e6-4fe3-847f-0e0cecfa77ee",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=logga in",
+      "targets": [
+        ["linkText=logga in", "linkText"],
+        ["css=.global_action_link:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'logga in')]", "xpath:link"],
+        ["xpath=//div[@id='global_action_menu']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://store.steampowered.com/login/?redir=%3Fsnr%3D1_4_4__global-header&redir_ssl=1&snr=1_4_4__global-header')])[2]", "xpath:href"],
+        ["xpath=//div[3]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'logga in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "93cebc50-23ff-4d1f-9289-2ffad50fcd64",
+      "comment": "",
+      "command": "type",
+      "target": "css=.newlogindialog_TextField_2KXGK:nth-child(1) > .newlogindialog_TextInput_2eKVn",
+      "targets": [
+        ["css=.newlogindialog_TextField_2KXGK:nth-child(1) > .newlogindialog_TextInput_2eKVn", "css:finder"],
+        ["xpath=//input[@value='daim212']", "xpath:attributes"],
+        ["xpath=//div[@id='responsive_page_template_content']/div/div/div/div/div/div[2]/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "daim212"
+    }, {
+      "id": "d215cf56-04dc-415e-b203-27b12201d673",
+      "comment": "",
+      "command": "type",
+      "target": "css=.newlogindialog_TextField_2KXGK:nth-child(2) > .newlogindialog_TextInput_2eKVn",
+      "targets": [
+        ["css=.newlogindialog_TextField_2KXGK:nth-child(2) > .newlogindialog_TextInput_2eKVn", "css:finder"],
+        ["xpath=//input[@value='RAI548ium']", "xpath:attributes"],
+        ["xpath=//div[@id='responsive_page_template_content']/div/div/div/div/div/div[2]/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "RAI548ium"
+    }, {
+      "id": "ad24ab5b-98cf-446d-9050-a09b5c43eeed",
+      "comment": "",
+      "command": "click",
+      "target": "css=.newlogindialog_TextField_2KXGK:nth-child(1) > .newlogindialog_TextInput_2eKVn",
+      "targets": [
+        ["css=.newlogindialog_TextField_2KXGK:nth-child(1) > .newlogindialog_TextInput_2eKVn", "css:finder"],
+        ["xpath=//input[@value='daim212']", "xpath:attributes"],
+        ["xpath=//div[@id='responsive_page_template_content']/div/div/div/div/div/div[2]/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8bdea950-a2c8-4082-8b9e-dc996a72f358",
+      "comment": "",
+      "command": "type",
+      "target": "css=.newlogindialog_TextField_2KXGK:nth-child(1) > .newlogindialog_TextInput_2eKVn",
+      "targets": [
+        ["css=.newlogindialog_TextField_2KXGK:nth-child(1) > .newlogindialog_TextInput_2eKVn", "css:finder"],
+        ["xpath=//input[@value='Dumle212']", "xpath:attributes"],
+        ["xpath=//div[@id='responsive_page_template_content']/div/div/div/div/div/div[2]/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Dumle212"
+    }, {
+      "id": "b3ac8741-2e07-42fe-b897-950ffc3fd14e",
+      "comment": "",
+      "command": "type",
+      "target": "css=.newlogindialog_TextField_2KXGK:nth-child(2) > .newlogindialog_TextInput_2eKVn",
+      "targets": [
+        ["css=.newlogindialog_TextField_2KXGK:nth-child(2) > .newlogindialog_TextInput_2eKVn", "css:finder"],
+        ["xpath=//input[@value='RAI548ium']", "xpath:attributes"],
+        ["xpath=//div[@id='responsive_page_template_content']/div/div/div/div/div/div[2]/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "RAI548ium"
+    }, {
+      "id": "2683804e-efb3-4861-ba91-c94c817e4ed6",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.newlogindialog_TextField_2KXGK:nth-child(2) > .newlogindialog_TextInput_2eKVn",
+      "targets": [
+        ["css=.newlogindialog_TextField_2KXGK:nth-child(2) > .newlogindialog_TextInput_2eKVn", "css:finder"],
+        ["xpath=//input[@value='RAI548ium']", "xpath:attributes"],
+        ["xpath=//div[@id='responsive_page_template_content']/div/div/div/div/div/div[2]/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "1a7690df-4ec9-48e7-8361-7261899d7905",
+      "comment": "",
+      "command": "click",
+      "target": "id=account_pulldown",
+      "targets": [
+        ["id=account_pulldown", "id"],
+        ["css=#account_pulldown", "css:finder"],
+        ["xpath=//span[@id='account_pulldown']", "xpath:attributes"],
+        ["xpath=//div[@id='global_action_menu']/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'VaLn')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "687e8f14-0e83-4610-a009-1a9fc223f394",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Visa profil",
+      "targets": [
+        ["linkText=Visa profil", "linkText"],
+        ["css=#account_dropdown > .popup_body > .popup_menu_item:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Visa profil')]", "xpath:link"],
+        ["xpath=//div[@id='account_dropdown']/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://steamcommunity.com/profiles/76561198210507704/')])[35]", "xpath:href"],
+        ["xpath=//div[3]/div/div[3]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Visa profil')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b81b6016-25b5-48a2-a88d-4df7ea7ca2b9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Counter-Strike: Global Offensive",
+      "targets": [
+        ["linkText=Counter-Strike: Global Offensive", "linkText"],
+        ["css=.recent_game:nth-child(1) .game_info .whiteLink", "css:finder"],
+        ["xpath=//a[contains(text(),'Counter-Strike: Global Offensive')]", "xpath:link"],
+        ["xpath=//div[@id='responsive_page_template_content']/div/div[2]/div/div[2]/div[2]/div/div/div/div[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://steamcommunity.com/app/730')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/div/div/div/div[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Counter-Strike: Global Offensive')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c1623f49-0fe2-40b9-b110-e4657f5d8ef5",
+      "comment": "",
+      "command": "assertText",
+      "target": "//*[@id=\"ModalContentContainer\"]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]",
+      "targets": [],
+      "value": "Counter-Strike: Global Offensive"
+    }, {
+      "id": "5a36570f-09b7-43ef-b775-d17a7417af44",
+      "comment": "",
+      "command": "click",
+      "target": "id=account_pulldown",
+      "targets": [
+        ["id=account_pulldown", "id"],
+        ["css=#account_pulldown", "css:finder"],
+        ["xpath=//span[@id='account_pulldown']", "xpath:attributes"],
+        ["xpath=//div[@id='global_action_menu']/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'VaLn')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9ccc7c1f-a1fa-4321-bd4e-a79a3582e871",
+      "comment": "",
+      "command": "click",
+      "target": "css=.popup_menu_item > .persona",
+      "targets": [
+        ["css=.popup_menu_item > .persona", "css:finder"],
+        ["xpath=//div[@id='account_dropdown']/div/a[3]/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/a[3]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'dumle212')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "0fe8f0b0-3c61-42bc-813a-bb7e48f1259e",
+    "name": "Butik - Köpa spel - Assert detaljer",
+    "commands": [{
+      "id": "01cf528b-6beb-44de-bad3-b18ca33932aa",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b5a93175-e2a8-4c7c-ade1-c4d66c939394",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=BUTIK",
+      "targets": [
+        ["linkText=BUTIK", "linkText"],
+        ["css=.supernav:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'BUTIK')]", "xpath:link"],
+        ["xpath=//div[@id='global_header']/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://store.steampowered.com/?snr=1_4_4__global-header')])[2]", "xpath:href"],
+        ["xpath=//div[7]/div/div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'BUTIK')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "68f3ae03-0665-4b98-b341-e521ad6d2d4d",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=BUTIK",
+      "targets": [
+        ["linkText=BUTIK", "linkText"],
+        ["css=.supernav:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'BUTIK')]", "xpath:link"],
+        ["xpath=//div[@id='global_header']/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://store.steampowered.com/?snr=1_4_4__global-header')])[2]", "xpath:href"],
+        ["xpath=//div[7]/div/div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'BUTIK')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "158f3618-e584-4cb1-a0cd-d9f18c637f86",
+      "comment": "",
+      "command": "click",
+      "target": "id=store_nav_search_term",
+      "targets": [
+        ["id=store_nav_search_term", "id"],
+        ["name=term", "name"],
+        ["css=#store_nav_search_term", "css:finder"],
+        ["xpath=//input[@id='store_nav_search_term']", "xpath:attributes"],
+        ["xpath=//form[@id='searchform']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "73e2345b-a08d-4a82-bcfb-4c5835488763",
+      "comment": "",
+      "command": "type",
+      "target": "id=store_nav_search_term",
+      "targets": [
+        ["id=store_nav_search_term", "id"],
+        ["name=term", "name"],
+        ["css=#store_nav_search_term", "css:finder"],
+        ["xpath=//input[@id='store_nav_search_term']", "xpath:attributes"],
+        ["xpath=//form[@id='searchform']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Hogwarts Legacy"
+    }, {
+      "id": "429f87d9-0c4b-4d40-b02d-ca4d4cfd2d1b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.match_category_top > .match_name",
+      "targets": [
+        ["css=.match_category_top > .match_name", "css:finder"],
+        ["xpath=//div[@id='search_suggestion_contents']/a/div", "xpath:idRelative"],
+        ["xpath=//div[9]/div[2]/div/div/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba5e4122-7ee8-4e95-83c3-eb3026ffcd7c",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,500)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f07cbda9-b759-41ad-b815-18c5451bb1cc",
+      "comment": "",
+      "command": "click",
+      "target": "css=#btn_add_to_cart_822363 > span",
+      "targets": [
+        ["css=#btn_add_to_cart_822363 > span", "css:finder"],
+        ["xpath=//a[@id='btn_add_to_cart_822363']/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Köp')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f7253349-9034-4bb9-9e88-7ad05797c8ff",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=Hogwarts Legacy",
+      "targets": [
+        ["linkText=Hogwarts Legacy", "linkText"],
+        ["css=.cart_item_desc > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Hogwarts Legacy')]", "xpath:link"],
+        ["xpath=//div[@id='cart_row_5066023942814988742']/div/div[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://store.steampowered.com/app/990080?snr=1_8_4__501')])[2]", "xpath:href"],
+        ["xpath=//div[4]/div/div/div/div/div[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Hogwarts Legacy')]", "xpath:innerText"]
+      ],
+      "value": "Hogwarts Legacy"
+    }, {
+      "id": "15beb393-358e-4d52-bfff-2df79deb2abf",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.btnv6_blue_hoverfade > span",
+      "targets": [
+        ["css=.btnv6_blue_hoverfade > span", "css:finder"],
+        ["xpath=//div[@id='responsive_page_template_content']/div/div[2]/div[4]/div[2]/div[2]/a/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Fortsätt handla')]", "xpath:innerText"]
+      ],
+      "value": "Fortsätt handla"
+    }, {
+      "id": "07a36bba-3b90-4b50-9969-fba16bb8a647",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=cart_estimated_total",
+      "targets": [
+        ["id=cart_estimated_total", "id"],
+        ["css=#cart_estimated_total", "css:finder"],
+        ["xpath=//div[@id='cart_estimated_total']", "xpath:attributes"],
+        ["xpath=//div[@id='cart_estimated_total_text']/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[3]/div/div/div/div", "xpath:position"]
+      ],
+      "value": "59,99€"
+    }, {
+      "id": "681bd27d-a3b3-4a5d-a0b1-899c288cc1a5",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.dailydeal_ctn:nth-child(1) img",
+      "targets": [
+        ["css=.dailydeal_ctn:nth-child(1) img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://cdn.akamai.steamstatic.com/steam/apps/1663640/header.jpg?t=1670578140')]", "xpath:img"],
+        ["xpath=//div[@id='responsive_page_template_content']/div/div[2]/div[5]/div/div/a/img", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "49436eb7-71f9-461c-aa5e-bf3749b4bbd1",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.dailydeal_ctn:nth-child(1) img",
+      "targets": [
+        ["css=.dailydeal_ctn:nth-child(1) img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://cdn.akamai.steamstatic.com/steam/apps/1663640/header.jpg?t=1670578140')]", "xpath:img"],
+        ["xpath=//div[@id='responsive_page_template_content']/div/div[2]/div[5]/div/div/a/img", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a0966500-a23e-45de-b05d-5e43d3dc0b45",
+      "comment": "",
+      "command": "click",
+      "target": "css=#btn_purchase_self > span",
+      "targets": [
+        ["css=#btn_purchase_self > span", "css:finder"],
+        ["xpath=//a[@id='btn_purchase_self']/span", "xpath:idRelative"],
+        ["xpath=//div[2]/a[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Köp åt mig själv')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6989ccd0-d864-4df2-a19d-ce7d8f04b470",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=payment_header",
+      "targets": [
+        ["id=payment_header", "id"],
+        ["css=#payment_header", "css:finder"],
+        ["xpath=//h3[@id='payment_header']", "xpath:attributes"],
+        ["xpath=//div[@id='payment_info_tab']/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"]
+      ],
+      "value": "BETALNINGSSÄTT"
+    }]
+  }],
+  "suites": [{
+    "id": "f97db250-15e6-469c-bbfc-d9e69482a0ab",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://store.steampowered.com/"],
+  "plugins": []
+}
