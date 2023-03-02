@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'master', url: 'https://github.com/username/repository.git'
+                git branch: 'master', url: 'https://github.com/ViktorAndrei/Steampowered-Store.git'
             }
         }
         stage('Build and Test') {
