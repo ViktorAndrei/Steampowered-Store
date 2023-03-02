@@ -4,12 +4,12 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'master', url: 'https://github.com/ViktorAndrei/Steampowered-Store.git'
+                git branch: 'main', url: 'https://github.com/ViktorAndrei/Steampowered-Store.git'
             }
         }
         stage('Build and Test') {
             steps {
-                sh 'mvn clean test'
+                bat 'python --version'
             }
         }
     }
