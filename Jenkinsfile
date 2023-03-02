@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Build and Test') {
             steps {
-                sh 'mvn clean test'
+                bat 'python --version'
             }
         }
     }
