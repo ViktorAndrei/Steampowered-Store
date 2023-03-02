@@ -2,10 +2,14 @@
 pipeline {
     agent any 
     stages {
-        stage("build") {
+        stage('Checkout') {
             steps {
-                echo 'Jag heter Viktor'
-                //sh 'python --version'
+                git branch: 'master', url: 'https://github.com/username/repository.git'
+            }
+        }
+        stage('Build and Test') {
+            steps {
+                sh 'mvn clean test'
             }
         }
     }
