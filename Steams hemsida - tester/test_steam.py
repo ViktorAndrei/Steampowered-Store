@@ -3,6 +3,7 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 import unittest
 from selenium.webdriver.common.action_chains import ActionChains
+import time
 
 class BrowserTest(unittest.TestCase):
     
@@ -39,6 +40,7 @@ class BrowserTest(unittest.TestCase):
         self.assertEqual(item_name, expected)
 
     def test_login_assertAccount_logout(self):
+        time.sleep(3)
         self.driver.find_element(By.XPATH, '//*[@id="global_action_menu"]/a').click()
         self.driver.find_element(By.XPATH, '//*[@id="responsive_page_template_content"]/div[1]/div[1]/div/div/div/div[2]/div/form/div[1]/input').send_keys("Dumle212")
         self.driver.find_element(By.XPATH, '//*[@id="responsive_page_template_content"]/div[1]/div[1]/div/div/div/div[2]/div/form/div[2]/input').send_keys("RAI548ium")
@@ -60,6 +62,7 @@ class BrowserTest(unittest.TestCase):
         self.assertTrue(installation_button.is_displayed)
 
     def test_login_profile_lastPlayedGame_assertGame(self):
+        time.sleep(3)
         self.driver.find_element(By.XPATH, '//*[@id="global_action_menu"]/a').click()
         self.driver.find_element(By.XPATH, '//*[@id="responsive_page_template_content"]/div[1]/div[1]/div/div/div/div[2]/div/form/div[1]/input').send_keys("Dumle212")
         self.driver.find_element(By.XPATH, '//*[@id="responsive_page_template_content"]/div[1]/div[1]/div/div/div/div[2]/div/form/div[2]/input').send_keys("RAI548ium")
