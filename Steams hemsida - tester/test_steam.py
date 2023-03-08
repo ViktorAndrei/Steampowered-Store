@@ -72,6 +72,8 @@ class BrowserTest(unittest.TestCase):
         game_name = self.driver.find_element(By.XPATH, '//*[@id="ModalContentContainer"]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]').text
         expected = 'Counter-Strike: Global Offensive'
         self.assertEqual(game_name, expected)
+        self.driver.find_element(By.XPATH, '//*[@id="account_pulldown"]').click()
+        self.driver.find_element(By.XPATH, '//*[@id="account_dropdown"]/div/a[3]').click()
         
 
 
