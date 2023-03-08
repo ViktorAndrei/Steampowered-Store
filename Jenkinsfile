@@ -2,15 +2,17 @@
 pipeline {
     agent any 
     stages {
-        stage('Checkout') {
+        stage('Testing GitHub-tests locally') {
             steps {
-                git branch: 'main', url: 'https://github.com/ViktorAndrei/Steampowered-Store.git'
+                dir('C:/Users/User/.jenkins/workspace/KK2 - Tester/Steams hemsida - tester'){ 
+                    bat 'python -m unittest'
+                }
             }
         }
-        stage('Build and Test') {
+        stage('Clean Workspace'){
             steps {
-                bat 'python --version'
+                cleanWs()
             }
         }
-    }
-}
+        }
+        
