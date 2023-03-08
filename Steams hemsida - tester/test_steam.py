@@ -8,15 +8,13 @@ class BrowserTest(unittest.TestCase):
     
     @classmethod
     def setUpClass(cls):
-        serv_obj = Service("C:\Drivers\chromedriver.exe")
-        cls.driver = webdriver.Chrome(service=serv_obj)
+        cls.driver = webdriver.Chrome()
         cls.driver.implicitly_wait(10)
         cls.driver.maximize_window()
 
     def setUp(self):
         self.driver.get("https://store.steampowered.com/")
-        #self.mywait.until(EC.element_to_be_clickable((By.XPATH,"(//a[normalize-space()='Acceptera'])[1]"))).click()
-
+        
     
     def test_store_buy_assert(self):
         self.driver.find_element(By.LINK_TEXT, "BUTIK").click()
@@ -52,7 +50,15 @@ class BrowserTest(unittest.TestCase):
         self.assertEqual(profile_name, expected)
         self.driver.find_element(By.XPATH, '//*[@id="account_pulldown"]').click()
         self.driver.find_element(By.XPATH, '//*[@id="account_dropdown"]/div/a[3]').click()
-        
+
+    def test_about_assertInstallButton(self):
+        butik = self.driver.find_element(By.XPATH, '//*[@id="global_header"]/div/div[2]/a[1]')
+        a = ActionChains(self.driver)
+        a.move_to_element(butik).perform()
+        self.driver.find_element(By.LINK_TEXT, 'OM').click()
+        installation_button = self.driver.find_element(By.XPATH, '//*[@id="about_greeting"]/div[4]/div[1]/a')
+        self.assertTrue(installation_button.is_displayed)
+
     def test_login_profile_lastPlayedGame_assertGame(self):
         self.driver.find_element(By.XPATH, '//*[@id="global_action_menu"]/a').click()
         self.driver.find_element(By.XPATH, '//*[@id="responsive_page_template_content"]/div[1]/div[1]/div/div/div/div[2]/div/form/div[1]/input').send_keys("Dumle212")
@@ -64,14 +70,6 @@ class BrowserTest(unittest.TestCase):
         game_name = self.driver.find_element(By.XPATH, '//*[@id="ModalContentContainer"]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]').text
         expected = 'Counter-Strike: Global Offensive'
         self.assertEqual(game_name, expected)
-        
-    def test_about_assertInstallButton(self):
-        butik = self.driver.find_element(By.XPATH, '//*[@id="global_header"]/div/div[2]/a[1]')
-        a = ActionChains(self.driver)
-        a.move_to_element(butik).perform()
-        self.driver.find_element(By.LINK_TEXT, 'OM').click()
-        installation_button = self.driver.find_element(By.XPATH, '//*[@id="about_greeting"]/div[4]/div[1]/a')
-        self.assertTrue(installation_button.is_displayed)
         
 
 
