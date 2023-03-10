@@ -3,7 +3,6 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 import unittest
 from selenium.webdriver.common.action_chains import ActionChains
-import time
 
 class BrowserTest(unittest.TestCase):
     
