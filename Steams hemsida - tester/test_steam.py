@@ -18,6 +18,7 @@ class BrowserTest(unittest.TestCase):
     
     
     def test_store_buy_assert(self):
+        self.driver.find_element(By.XPATH, '//*[@id="logo_holder"]/a/img').click()
         self.driver.find_element(By.LINK_TEXT, "BUTIK").click()
         self.driver.find_element(By.XPATH, '//*[@id="store_nav_search_term"]').send_keys("Hogwarts Legacy")
         self.driver.find_element(By.XPATH, '//*[@id="search_suggestion_contents"]/a[1]/div[1]').click()
@@ -29,6 +30,7 @@ class BrowserTest(unittest.TestCase):
         self.assertEqual(spel_text, expected)
         
     def test_store_search_assertItem(self):
+        self.driver.find_element(By.XPATH, '//*[@id="logo_holder"]/a/img').click()
         gemenskap = self.driver.find_element(By.XPATH, '/html/body/div[1]/div[7]/div[1]/div/div[2]/a[2]')
         a = ActionChains(self.driver)
         a.move_to_element(gemenskap).perform()
