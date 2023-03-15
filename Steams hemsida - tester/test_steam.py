@@ -17,7 +17,7 @@ class BrowserTest(unittest.TestCase):
         self.driver.get("https://store.steampowered.com/")
         
     
-    
+    # hej
     def test_store_buy_assert(self):
         self.driver.find_element(By.XPATH, '//*[@id="logo_holder"]/a/img').click()
         self.driver.find_element(By.LINK_TEXT, "BUTIK").click()
