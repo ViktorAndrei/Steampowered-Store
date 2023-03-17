@@ -55,6 +55,7 @@ class BrowserTest(unittest.TestCase):
         self.assertEqual(profile_name, expected)
         self.driver.find_element(By.XPATH, '//*[@id="account_pulldown"]').click()
         self.driver.find_element(By.XPATH, '//*[@id="account_dropdown"]/div/a[3]').click()
+        self.driver.find_element(By.XPATH, '//*[@id="logo_holder"]/a/img').click()
 
     def test_about_assertInstallButton(self):
         self.driver.find_element(By.XPATH, '//*[@id="logo_holder"]/a/img').click()
@@ -64,9 +65,10 @@ class BrowserTest(unittest.TestCase):
         self.driver.find_element(By.LINK_TEXT, 'OM').click()
         installation_button = self.driver.find_element(By.XPATH, '//*[@id="about_greeting"]/div[4]/div[1]/a')
         self.assertTrue(installation_button.is_displayed)
+        self.driver.find_element(By.XPATH, '//*[@id="logo_holder"]/a/img').click()
 
     def test_login_profile_lastPlayedGame_assertGame(self):
-        time.sleep(3)
+        #time.sleep(3)
         self.driver.find_element(By.XPATH, '//*[@id="logo_holder"]/a/img').click()
         self.driver.find_element(By.XPATH, '//*[@id="global_action_menu"]/a').click()
         self.driver.find_element(By.XPATH, '//*[@id="responsive_page_template_content"]/div[1]/div[1]/div/div/div/div[2]/div/form/div[1]/input').send_keys("Dumle212")
@@ -80,6 +82,7 @@ class BrowserTest(unittest.TestCase):
         self.assertEqual(game_name, expected)
         self.driver.find_element(By.XPATH, '//*[@id="account_pulldown"]').click()
         self.driver.find_element(By.XPATH, '//*[@id="account_dropdown"]/div/a[3]').click()
+        self.driver.find_element(By.XPATH, '//*[@id="logo_holder"]/a/img').click()
         
 
 
