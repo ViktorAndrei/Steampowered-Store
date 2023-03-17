@@ -65,7 +65,7 @@ class BrowserTest(unittest.TestCase):
         a = ActionChains(self.driver)
         a.move_to_element(butik).perform()
         self.driver.find_element(By.LINK_TEXT, 'OM').click()
-        installation_button = self.driver.find_element(By.XPATH, '//*[@id="about_greeting"]/div[4]/div[1]/a')
+        installation_button = self.driver.find_element(By.XPATH, '/html/body/div[1]/div[7]/div[6]/div[1]/div[1]/div[2]/div/div[4]/div[1]/a')
         self.assertTrue(installation_button.is_displayed)
         self.driver.find_element(By.XPATH, '//*[@id="logo_holder"]/a/img').click()
 
