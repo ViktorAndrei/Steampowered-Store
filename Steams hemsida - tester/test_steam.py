@@ -37,7 +37,9 @@ class BrowserTest(unittest.TestCase):
         a.move_to_element(gemenskap).perform()
         self.driver.find_element(By.LINK_TEXT, 'MARKNAD').click()
         self.driver.find_element(By.XPATH, '//*[@id="findItemsSearchBox"]').send_keys("Revolution case")
+        self.driver.find_element(By.XPATH,'//*[@id="findItemsSearchSubmit"]').click()
         self.driver.find_element(By.XPATH,'//*[@id="result_0_name"]').click()
+        time.sleep(3)
         item_name = self.driver.find_element(By.XPATH, '//*[@id="largeiteminfo_item_name"]').text
         expected = 'Revolution Case'
         self.assertEqual(item_name, expected)
